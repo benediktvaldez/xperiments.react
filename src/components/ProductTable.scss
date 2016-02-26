@@ -1,0 +1,37 @@
+@import '../variables';
+
+:local .root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0px;
+  border-collapse: collapse;
+
+  td, th {
+    margin: 0;
+    padding: $spacing/4;
+    border-bottom: 1px dashed $border-color;
+  }
+  th {
+    vertical-align: bottom;
+    padding-top: $spacing;
+    text-align: left;
+    border-bottom-style: solid;
+
+    &[data-count]::after {
+      font-size: $font-size-small;
+    }
+  }
+}
+
+:local .countSingle {
+  &[data-count]::after {
+    content: ' (' attr(data-count) ' item)';
+  }
+}
+
+:local .countMulti {
+  &[data-count]::after {
+    content: ' (' attr(data-count) ' items)';
+  }
+}

@@ -1,0 +1,31 @@
+@import '../variables';
+
+:local .root {
+  width: 100%;
+}
+
+:local .root td {
+  text-align: left;
+
+  &:last-child {
+    width: 100px;
+  }
+}
+
+:local .outOfStock {
+  color: $alert-color;
+  font-style: italic;
+  background-color: rgba($alert-color, 0.1);
+
+  td {
+    &:first-child::after {
+      content: ' (out of stock)';
+      font-size: $font-size-small;
+      float: right;
+    }
+    &:last-child {
+      text-decoration: line-through;
+    }
+  }
+
+}

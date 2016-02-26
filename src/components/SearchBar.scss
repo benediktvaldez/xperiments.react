@@ -1,0 +1,9 @@
+@import '../variables';
+
+:local .textInput {
+  font-style: italic;
+}
+
+:local .label {
+  margin-top: -$spacing/2;
+}

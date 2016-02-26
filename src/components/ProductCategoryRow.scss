@@ -1,0 +1,9 @@
+@import '../variables';
+
+:local .root {
+  width: 100%;
+}
+
+:local .root th {
+  font-size: $font-size-small;
+}

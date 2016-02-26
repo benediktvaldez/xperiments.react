@@ -1,0 +1,10 @@
+@import '../variables';
+
+:local .root {
+  vertical-align: middle;
+  font-size: $font-size;
+  color: $font-color;
+
+  user-select: none;
+  cursor: pointer;
+}

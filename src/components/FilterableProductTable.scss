@@ -1,0 +1,19 @@
+@import '../variables';
+
+:local .root {
+  margin: 0 auto $spacing;
+  padding: $spacing;
+  width: 100%;
+  max-width: 500px;
+
+  border: 1px solid $primary-color;
+
+  font-family: $font-family;
+  color: $font-color;
+
+  box-sizing: border-box;
+}
+
+:local .root :global * {
+  box-sizing: border-box;
+}

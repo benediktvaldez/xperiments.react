@@ -1,0 +1,21 @@
+@import '../variables';
+
+:local .root {
+  margin: 0 auto $spacing;
+  padding: 0 $spacing/2;
+  width: 100%;
+  height: $spacing*2;
+  line-height: $spacing*2;
+
+  font-size: $font-size-large;
+  color: $font-color;
+
+  border: 1px solid $primary-color;
+
+  transition: border 250ms;
+
+  &:focus {
+    outline: none;
+    border-color: $secondary-color;
+  }
+}
